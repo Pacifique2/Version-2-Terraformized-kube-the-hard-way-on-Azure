@@ -1,0 +1,13 @@
+subscription_id = "" 
+tcp_protocol    = "Tcp"
+lb_rule_name    = "kubernetes-apiserver-rule"
+lb_frontend_ip_conf_name = "KubePublicIPAddress"
+frontend_port   = 6443
+backend_port    = 6443
+number_of_nodes = 2
+controller_username = "********"
+controller_password = "************"
+w_username = "**********"
+w_password = "************"
+deny_bgp_route_propagation = "false"
+#ssh_public_key = "${file("~/.ssh/kube-devolab_id_rsa.pub")}"
